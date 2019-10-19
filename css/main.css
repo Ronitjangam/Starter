@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+a i{
+    color: #22A1F0;
+    font-size:1.6rem;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+h4,h5,h6{
+    font-weight: 700;
+}
+
+/*button*/
+
+.bg-primary{
+    background-color: black!important;
+}
+
+.btn-primary{
+    background-color:  #22A1F0!important;
+    border-color:  #22A1F0!important;
+}
+.btn-primary:hover{
+    background-color:  white!important;
+    border-color:  #22A1F0!important;
+    color:  #22A1F0!important;
+}
+
+/*navbar*/
+.navbar-brand{
+    font-size: 2rem!important;
+   
+}
+.nav-link,.navbar-brand{
+    color: black!important;
+}
+/*Pricing*/
+.pricing{
+    background:linear-gradient(to right,#1ACFE5,#0C55F3);
+}
+.pricing .card{
+    border-radius: 0!important;
+    border-top:none;
+}
+.pricing .card:hover{
+    transform: scale(1.07);
+    transition: 1s;
+    z-index:100;
+
+}
+.list-unstyled{
+    border-bottom: 1px solid #22A1F0!important ;
+}
+.fa-bars{
+    border:none!important;
+}
+/*Services*/
+.single-service{
+    position: relative;
+    text-align: center;
+    margin-bottom:50px;
+    transition:0.2s;
+    padding: 10px 20px;
+}
+.single-service::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.3s;
+    width:0;
+    height: 0;
+    background-color: #22A1F0!important ;
+
+
+}
+.single-service::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    transition:0.3s;
+    width:0;
+    height: 0;
+    background-color: #22A1F0!important ;
+
+
+}
+.single-service:hover::after,.single-service:hover::before{
+    width: 190px;
+    height: 5px;
+}
+.single-service i{
+    font-size:1.3rem;
+    border:1px solid #ddd;
+    width:60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-bottom:30px;
+}
+.single-service i:hover{
+    background-color: #22A1F0;
+    color: white;
+}
+.single-service h5{
+    font-weight: 800;
+    font-size:1.8rem;
+}
+/*team*/
+
+.team .img-top{
+    height:300px;
+    object-fit:cover;
+}
+.team .card{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+}
+.team .card-body{
+    position: absolute;
+    bottom:-100%;
+    width: 100%;
+    background-color: #22A1F0;
+    transition:0.5s;
+    color: white;
+    opacity:0.9;
+}
+.team .card:hover>.card-body{
+    bottom:0%;
+}
+/*cta*/
+.cta{
+    background: linear-gradient(45deg, #22A1F0,blue);
+    color:white;
+}
+.cta .btn{
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius: 0px;
+}
+/*contact*/
+textarea,input[type="text"],input[type="email"]{
+    border-color: #eee!important;
+    border-radius:0px!important;
+    padding: 20px!important;
+}
+textarea:focus,input[type="text"]:focus,input[type="email"]:focus{
+    box-shadow:0px 5px 5px gray!important;
+}
+/*footer*/
+.footer{
+    background-color: black!important;
+    color: cornsilk!important;
+}
+.footer .nav-link{
+    color: cornsilk!important;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:700px){
+body{
+    text-align: center!important;
+}
+.about{
+    text-align: center!important;
+    margin-top:50px;
+} 
+.about h3{
+    text-align: center!important;
+}
+.cta-heading{
+    text-align: center!important;
+}
+}
